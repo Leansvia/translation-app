@@ -25,5 +25,5 @@ Bu proje, kullanıcıların metinleri çevirmelerine ve sesli olarak okutmaları
 Projeyi kendi bilgisayarınıza klonlayın:
 
 ```bash
-git clone https://github.com/username/repository.git
+git clone https://github.com/leansvia/translation-app.git
 cd repository
