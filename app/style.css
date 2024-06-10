@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #121212;
+  color: #fff;
+}
+
+.container.hidden {
+  display: none;
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  background: #1E1E1E;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  border: 2px solid #333;
+  padding: 25px;
+}
+
+.wrapper {
+  border-radius: 12px;
+  border: 2px solid #444;
+  overflow: hidden;
+  margin-bottom: 25px;
+  padding: 25px;
+  background: rgba(34, 34, 34, 0.9);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.wrapper:hover {
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
+}
+
+.text-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.text-input textarea {
+  height: 150px;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  background: #2A2A2A;
+  color: #ddd;
+  font-size: 16px;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 2px solid #333;
+  transition: border-color 0.3s ease;
+}
+
+.text-input textarea:focus {
+  border-color: #6200EE;
+}
+
+.text-input textarea::placeholder {
+  color: #888;
+  transition: color 0.3s ease;
+}
+
+.text-input textarea:focus::placeholder {
+  color: #bbb;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.controls .row {
+  display: flex;
+  align-items: center;
+}
+
+.controls .row select {
+  background: #2A2A2A;
+  color: #ddd;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-right: 15px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.controls .row select:focus {
+  border-color: #6200EE;
+}
+
+.icons {
+  display: flex;
+}
+
+.icons i {
+  color: #888;
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icons i:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+.exchange {
+  color: #888;
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+  margin: 0 25px;
+}
+
+.exchange:hover {
+  color: #fff;
+  transform: rotate(180deg);
+}
+
+button {
+  width: 100%;
+  padding: 18px;
+  border: none;
+  border-radius: 8px;
+  background: #6200EE;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: #3700B3;
+  transform: scale(1.05);
+}
+
+.intro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  z-index: 10;
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+.intro.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease-in;
+}
